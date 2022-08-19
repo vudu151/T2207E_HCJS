@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+    background-image: url("../images/anh2-4132-1660632035.jpg");
+    background-size: cover;
+}
+h1{
+    color: darkblue;
+}
+p{
+    color: rgba(255,20,110,50);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    line-height: 1.5;
+    text-align: right;   /*left,right,center,justify*/
+    text-decoration: underline;   /*none,underline,line-through,overline*/
+    text-transform: capitalize;  /*lowercase,uppercase,none,capitalize*/
+    font-style: italic;
+    background-color: aqua;
+    width: 200px;
+}
