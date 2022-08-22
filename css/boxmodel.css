@@ -1,0 +1,44 @@
+div{
+    width: calc(20% - 10px - 10px);             /*độ rộng, thường không cần heigh vì heigh thường đi kèm với width*/  /*ham calc dùng để tính toán diện tích nội dung vừa đử để các thẻ trong một hàng,25% là của 1 trang to của máy tính(tùy theo máy tính thì width khác nhau) hay điện thoại*/
+    float: left;                               /*dồn các phần tử từ trái sang phải, nếu hết thì xuống dưới*/  /*left, right,none*/
+    border: 1px solid red;                    /*dotted,dashed*/ /*chia nhỏ là : border-top,border-right,border-left,border-bottom*/
+    margin: 10px 15px 20px 25px;             /*khoảng cách từ border đến thẻ div, margin không tính vào diện tích của nội dung*/  /*chia nhỏ: margin-top,margin-right,margin-left,margin-bottom*/
+    padding: 15px;                          /*khoảng cách từ boder đến nội dung*/ /*Nguyên tắc giống margin, padding cộng vào diện tích của khối*/
+    box-sizing: border-box;                /* diện tích của khối tính bị cố định từ border vào trong*/
+                                          /*border-content : diện tích khối bị cố định từ nội dung đi ra*/
+    border-radius: 20px;                 /*Cắt góc , giống như ở ứng dụng iphone*/
+    box-shadow: 5px 10px 10px red;      /*thứ tự các thông số : 5px tọa đọ theo phương x sang phải,10px tọa độ theo phương y xuống dưới, 10px độ nhỏe của bóng , red: màu đổ bóng; Chú ý : Nếu bóng lên trên thì các tọa độ kia chuyển sang âm, riêng độ nhòe thì vẫn là dương*/
+    transition: 1s all;                /*thời gian trễ*/
+}
+div:hover{                            /* là trạng thái của người dùng khi đưa chuột vào phần tử đó*/
+    transform: translate(50px,100px);/*hồn bay khỏi xác, chứ thực tế nội dung vẫn ở chỗ cũ*/ /*Ngòi ra còn kiểu rotate: là góc xoay, scale: là phóng to thu nhỏ*/
+    background-color: aqua;
+}
+img{
+    max-width: 100%;               /*kéo, dãn ảnh để không bị vỡ*/
+}
+  /* CẤP ĐỘ ƯU TIÊN CỦA TAG, CLASS,ID */  /* Về cơ bản cấp độ ưu tiên id>class>tag. Tuy nhiên chi tiết hơn là các ví dụ dưới dây: */   /*Nếu muốn sử trở thành ưu tiên cao nhất thì thêm !important vào sau để trở thành ưu tiên cao nhất. VD: color: pink !important*/
+#box-s{
+    background-color: yellow ;
+}
+body.box-bb #pg{
+    color: brown;
+}
+#pg{
+    color: #999999;
+}
+.box-bb.cp{
+    color: blue
+}
+div.box-bb.box-bt p{
+    color: aliceblue;
+}
+body.box-bb p{
+
+}
+.box-bb p{
+    color: red;
+}
+.box-bt{
+    background-color: #378b36;
+}
