@@ -149,47 +149,9 @@ li{
 .ct242 li{
     float: right;
 }
-.sidebar{
-    float: right;
+.sidebar {
+    float: right;     /*Muốn sửa độ dài của sidebar thì sửa 2 cái height bên HTML*/
     margin-top: 80px;
+    padding-left: 50px;
 }
-.sd1{
-    float: right;
-    width: 270px;
-    height: 160px;
-    background: url("https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/271010826_10158338105342256_877865479888732148_n.jpg?stp=dst-jpg_p960x960&_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=1DbFQ8JGoc8AX-nCdGq&_nc_ht=scontent.fhan5-8.fna&oh=00_AT8rzp7hZaNtRqq3KKAZHXa4zkd04Tm0HmzIn31IsRC22Q&oe=6311FAB4");
-    background-size: cover;
-}
-.sd1 img{
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    transform: translate(10px,10px);
-}
-.sd2{
-    float: left;
-    transform: translate(110px,-150px);
-}
-.sd2 a{
-    font-size: 18px;
-    color: white;
-}
-.sd2 p{
-    font-size: 15px;
-    color: white;
-}
-.sd3{
-    float: left;
-    width: 30%;
-    height: 20px;
-    background: lightgray;
-    transform: translate(-82px,-30px);
-}
-.sd3 li a{
-    float: left;
-    text-align: center;
-    margin-top: 1px;
-    margin-left: 6px;
-}
-
 
