@@ -1,67 +1,39 @@
 body{
-    width: 760px;
-    background-color: #f2fff8;
-}
-div{
-    width: calc(35% - 10px - 15px);
-    background-color: whitesmoke;
-    float: left;
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
+    border: 1px solid #2d694f;
+    font-family: Arial, sans-serif;
+    width: 850px;
     box-sizing: border-box;
-    font-family:"Times New Roman";
-    transition: 300ms;
+    margin: 0;
+    transform: translate(300px,0px);
 }
-#box-s{
-    background-color: #1d7a5a;
-    width: 760px;
-    height: 150px;
+#header{
+    padding: 10px 0 10px 0;
     color: white;
+    float: left;
+    font-weight: bold;
+    width: 100%;
+    background-color: #2d694f;
+    box-sizing: border-box;
+    border: 1px solid green;
 }
-#box-s p{
-    color: #d7c8c8;
+#header img {
+    border-radius: 0 45% 45% 0;
+    max-width: 20%;
+    margin-top: 20px;
+}
+#header p{
+    font-size: 20px;
+    padding: 1rem 10rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+#leftc{
     font-size: 16px;
-}
-div.box-gt1{
-    width: calc(30% - 10px - 15px);
-}
-div.box-gt1 h2{
-    font-size: 16px;
-    color: #252525;
-}
-div.box-gt1 ul{
-    font-size: 16px;
-    color: #382c2c;
-}
-div.box-gt1 p li{
-    font-size: 16px;
-    color: #382c2c;
-}
-div.box-gt1 a{
-    font-size: 16px;
-    color: #050505;
-}
-div.box-gt2{
-    width: calc(70% - 10px - 15px);
-}
-div.box-gt2 h3{
-    font-size: 22px;
-    color: #1d7a5a;
-}
-div.box-gt2 h4{
-    font-size: 16px;
-    color: #378b36;
-}
-div.box-gt2 h5{
-    font-size: 15px;
-    color: #252525;
-}
-div.box-gt2 p{
-    font-size: 16px;
-    color: #382c2c;
-}
-div.box-gt2 ul{
-    font-size: 16px;
-    color: #382c2c;
+    line-height: 1.7;
+    width: calc(35% - 10px);
+    float:left;
+    box-sizing: border-box;
+    border: 1px solid #2d694f;
+    margin: 10px 0 0 10px;
+    padding: 0 0 0 10px;
 }
