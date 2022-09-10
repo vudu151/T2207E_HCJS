@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/weatherforecast.css">
+</head>
+<body>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_13.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_13.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_13.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_12.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_12.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_13.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_13.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_13.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_12.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_12.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09<span> 15:00:00</span></p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_12.png"/>
+    </div>
+    <div class="cell1">
+        <div class="top">
+            <p>2022-09-09 15:00:00</p>
+        </div>
+        <div class="center">
+            <p>20<sup>o</sup>C</p>
+        </div>
+        <div class="bottom">
+            <p>broken clouds</p>
+        </div>
+        <img src="images/img_12.png"/>
+    </div>
+
+    <script type="text/javascript">
+        function update(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onload = function (){
+                var data = JSON.parse(this.responseText);
+                var ds = data.data;
+                for( var i=0;i<ds.length;i++){
+                    //var date = list.list[i].dt;
+                    var temp = ds.list[i].main.temp;
+                }
+            }
+            xhttp.open("get","http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",true);
+            xhttp.send();
+        }
+        update();
+    </script>
+</body>
+</html>

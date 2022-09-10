@@ -68,8 +68,8 @@ var si=setInterval(countdown,1000);
 
 // Viet chuong trinh cu 2s in ra mot so chan. In toi da 10 so va tang dan
 
-var k=0;  //so lan
-var m=0;   // so chan
+var k=0;  //so chan
+var m=0;   // so lan
 function countdown1(){
     var a =document.getElementById("head1");
     a.innerText += " "+ k;    //+= day la noi chuoi, con = la thay the so moi

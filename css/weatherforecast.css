@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    height: 800px;
+    float: left;
+    font-size: 18px;
+    color: white;
+    background-image: url("../images/nhin-hinh-dang-may-doan-thoi-tiet-may-ti.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+.cell1{
+    width: calc(25% - 15px - 20px);
+    height: 200px;
+    float: left;
+    line-height: 1.5;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    background-color: #4a6b7a;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.top{
+    float: left;
+    font-size: 18px;
+    height: 20px;
+}
+.center{
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    margin-top: -20px;
+
+}
+.bottom{
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+}
+img{
+    float: right;
+    margin-top: -90px;
+    width: 40%;
+ }

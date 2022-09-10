@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập</title>
+</head>
+<body>
+    <ul id="menu">
+
+    </ul>
+    <script type="text/javascript">
+        function loadingMennu(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onload = function (){
+                var data = JSON.parse(this.responseText);
+                var list = data.data;
+                for ( var i=0;i<list.length;i++){
+                    var name = list[i].name;
+                    var image = list[i].icon;
+                    var str = `<li><img width="50" srrc ="${image}"/>${name}</li>`;
+                    var ul = document.getElementById("menu");
+                    ul.innerHTML +=str;
+                }
+            }
+            xhttp.open("get","\"https://foodgroup.herokuapp.com/api/menu",true);
+            xhttp.send();
+        }
+        loadingMennu();
+    </script>
+</body>
+</html>

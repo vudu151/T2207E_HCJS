@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+    <div class="bg-fade" id="bg-fade"></div>
+
+    <h1>City: <span id="city">ABC</span> </h1>
+    <h2>Temp: <span id="temp">20</span><sup>o</sup></h2>
+    <h2>Pressure: <span id="press">1000</span> </h2>
+    <button type="button" onclick="update('hanoi')">Hà Nội</button>
+    <button type="button" onclick="update('saigon')">TP.HCM</button>
+    <button type="button" onclick="update('tokyo')">Tokyo</button>
+    <button type="button" onclick="update('london')">London</button>
+    <button type="button" onclick="update('new york')">New York</button>
+    <script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>
