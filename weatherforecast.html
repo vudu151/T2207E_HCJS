@@ -6,166 +6,35 @@
     <link rel="stylesheet" href="css/weatherforecast.css">
 </head>
 <body>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_13.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_13.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_13.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_12.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_12.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_13.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_13.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_13.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_12.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_12.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09<span> 15:00:00</span></p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_12.png"/>
-    </div>
-    <div class="cell1">
-        <div class="top">
-            <p>2022-09-09 15:00:00</p>
-        </div>
-        <div class="center">
-            <p>20<sup>o</sup>C</p>
-        </div>
-        <div class="bottom">
-            <p>broken clouds</p>
-        </div>
-        <img src="images/img_12.png"/>
-    </div>
+    <div id="box">
 
+    </div>
     <script type="text/javascript">
-        function update(){
-            var xhttp = new XMLHttpRequest();
-            xhttp.onload = function (){
-                var data = JSON.parse(this.responseText);
-                var ds = data.data;
-                for( var i=0;i<ds.length;i++){
-                    //var date = list.list[i].dt;
-                    var temp = ds.list[i].main.temp;
-                }
+    function update(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function (){
+            var data = JSON.parse(this.responseText);
+            var ds = data.list;
+            for( var i=0;i<12;i++){
+                var date = ds[i].dt_txt;
+                var tp = ds[i].main.temp;
+                var cl = ds[i].weather[0].description;
+                var image = ds[i].weather[0].icon;
+
+                var str = `<div class="list">
+                           <h2>${date}</h2>
+                           <img src="https://openweathermap.org/img/wn/${image}@2x.png"/>
+                           <h1>${tp}<sup>o</sup>C</h1>
+                           <h3>${cl}</h3>
+                           </div>`;
+                var div = document.getElementById("box");
+                div.innerHTML +=str;
             }
-            xhttp.open("get","http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",true);
-            xhttp.send();
         }
-        update();
-    </script>
+        xhttp.open("get","http://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",true);
+        xhttp.send();
+    }
+    update();
+</script>
 </body>
 </html>
