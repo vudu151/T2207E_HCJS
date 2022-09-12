@@ -1,0 +1,16 @@
+.forecast-page{
+    background-image: url("../images/img_15.png");
+    background-size: cover;
+}
+.box-weather{
+    float: left;
+    padding: 15px;
+    margin: 15px;
+    width: calc(25% - 30px);
+    background: #eed3d3;
+    border-radius: 6px;
+    height: 160px;
+}
+.box-weather img{
+    transform: translate(150px,-80px);
+}
