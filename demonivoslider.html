@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Nivoslider</title>
+  <link rel="stylesheet" href="css/demolayout.css"/>
+    <link rel="stylesheet" href="library/nivoslider/themes/default/default.css"/>
+    <link rel="stylesheet" href="library/nivoslider/nivo-slider.css"/>
+</head>
+<body>
+    <section class="section banner">
+      <div class="container theme-default">
+          <div id="slider" class="nivoSlider">
+              <img src="images/img_8.png" data-thumb="images/img_8.png.jpg" alt="" />
+              <img src="images/img_6.png" data-thumb="images/img_6.png.jpg" alt="" title="This is an example of a caption" />
+              <img src="images/img_10.png" data-thumb="images/img_10.png.jpg" alt="" data-transition="slideInLeft" />
+              <img src="images/img_9.png" data-thumb="images/img_9.png.jpg" alt="" title="#htmlcaption" />
+          </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="library/jquery/jquery.3.6.1.js"></script>
+    <script type="text/javascript" src="library/nivoslider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $('#slider').nivoSlider();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map</title>
+  <link rel="stylesheet" href="css/demolayout.css"/>
+  <link rel="stylesheet" href="library/nivoslider/themes/default/default.css"/>
+  <link rel="stylesheet" href="library/nivoslider/nivo-slider.css"/>
+  <link rel="stylesheet" href="library/megamenu/css/style.css"/>
+</head>
+<body>
+<section class="section map" id="map" style="height: 900px">
+
+</section>
+    <script>
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 21.0288108, lng: 105.6780 },
+          zoom: 8,
+        });
+      }
+
+      window.initMap = initMap;
+    </script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initMap&v=weekly"
+            defer
+    ></script>
+</body>
+</html>
