@@ -1,0 +1,82 @@
+body{
+    margin-left: 450px;
+    background-color: #3aada9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    min-height: 600px;
+    font-family: Arial, sans-serif;
+}
+.register{
+    width: 100%;
+}
+.register-heading{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #702c91;
+}
+.register-heading i{
+    font-size: 50px;
+    margin-top: 20px;
+    color: #f2f3f5;
+}
+.register-heading h1{
+    font-size: 50px;
+    color: #f2f3f5;
+}
+.register-content{
+    width: 100%;
+    padding: 60px 10px;
+    background-color: #ffffff;
+}
+.register-content-group{
+    position: relative;
+    align-items: center;
+    float: left;
+    width: 100%;
+    margin: 20px 50px;
+    border-radius: 5px;
+}
+.register-content-group i{
+    position: absolute;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 50px;
+    color: whitesmoke;
+    background-color: #702c91;
+}
+.register-content-group input{
+    padding-left: 80px;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #dfdfdf;
+
+}
+.register-content-checkbook{
+    float: left;
+    margin-left: 50px;
+    color: grey;
+}
+.register-content-checkbook a{
+    text-decoration: none;
+}
+.register-content-signup button{
+    padding: 18px;
+    width: 486px;
+    margin: 30px 50px;
+    color: white;
+    font-size: 30px;
+    background-color: #702c91;
+
+}
+.register-content-already{
+    text-align: center;
+    transform: translate(20px);
+}
+.register-content-already a{
+    text-decoration: none;
+}
+
