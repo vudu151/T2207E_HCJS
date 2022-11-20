@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded',function (){
 //---Phần index 2 html
 const clickmail=document.querySelector('.icon')
 clickmail.addEventListener("click",function (){
-    window.location.href="index2.html"
+    window.location.href="mydarling2.html"
 })
