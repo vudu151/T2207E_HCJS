@@ -1,0 +1,79 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+}
+.microsite-intro{
+    height: 170px;
+    padding: 15px 0;
+}
+.container{
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 180px;
+    box-sizing: inherit;
+    padding: 0 15px;
+}
+.intro-area{
+    height: 100%;
+    padding: 0 30px;
+    color: #6f2475;
+    display: flex;
+}
+.title-area{
+    width: 50%;
+}
+.title-area h1{
+    font-size: 44px;
+}
+.title-area h5{
+    font-size: 26px;
+}
+.description-area{
+    width: 50%;
+    height: 100%;
+    font-size: 18px;
+    padding-top: 25px;
+ }
+.professional-board{
+    height: 800px;
+    display: flex;
+    padding: 30px 0 90px;
+}
+.professional-board-intro{
+    /*height: 100px;*/
+    text-align: center;
+    margin-bottom: 50px;
+}
+.professional-board-intro h3{
+    height: 40%;
+    color: #6f2475;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.professional-board-intro p{
+    height: 60%;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: inherit;
+}
+.member-professional-board{
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.member{
+    width: calc(100%/3) ;
+    height: 250px;
+    float: right;
+}
+
+.des-professional-board{
+    width: 50%;
+    float: left;
+    padding-top: 66px;
+    padding-left: 50px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,34 @@
+body{
+    background-image: url("../images/image3.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.wrapper{
+    background-color: rgb(253,215,215);
+    width: 600px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.8),
+    10px 5px 10px rgba(0,0,0,0.5);
+}
+.text{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 25px;
+    font-family: cursiver;
+    font-weight: bold;
+}
+.fa-solid{
+    color: red;
+    margin: 0px 15px;
+}
+.text-crush{
+    padding: 0px 15px;
+    font-size: 15px;
+    font-family: cursive;
+}
